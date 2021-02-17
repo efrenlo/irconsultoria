@@ -1,0 +1,40 @@
+body {
+    font-family: "Lato", sans-serif
+}
+
+.mySlides {
+    display: none
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.my-flex-card>div>div.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    text-align: justify;
+}
+
+.jumbotron{
+    background-color: grey;
+    color: white;
+        
+}
+
+
+
+
+
+

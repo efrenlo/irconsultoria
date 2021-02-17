@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Consultoria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Estilos-->
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="sobremi.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">¿Quien soy?</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contactame</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">Mas <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="Servicios.html" class="w3-bar-item w3-button">Servicios</a>
+                    <a href="experiencia.html" class="w3-bar-item w3-button">Experiencia</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+                    class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="Servicios.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Servicios</a>
+        <a href="experiencia.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Experiencia</a>
+        <a href="sobremi.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">¿Quien soy?</a>
+
+    </div>
+
+    <!-- Fin del Navbar -->
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h1 class="w3-xxxlarge"><b>Servicios</b></h1>
+        <h6>Un lugar de evolución <span class="w3-tag">Personal y Empresarial</span></h6>
+    </header>
+
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/empresa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Consultor empresarial</h4>
+                        <p class="card-text">Intervención organizacional con la finalidad de detectar y
+                            mejorar áreas de oportunidad y resolución de problemáticas detectadas, mediante las fases
+                            que conforman todo el proceso de una Intervención.</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal1">
+                        Ver mas..
+                    </button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/contabilidad.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Servicios Contables</h4>
+                        <p class="card-text">Contabilidad en general, consultas y asesorías contables y fiscales.</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal2">
+                        Ver mas..
+                    </button>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/desarrollo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <b>
+                            <h4 class="card-title">Desarrollo personal</h4>
+                        </b>
+                        <p class="card-text">Dinámicas individuales y grupales enfocadas en el desarrollo de
+                            habilidades y capacidades de las personas para que descubran y utilicen su potencial.</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal3">
+                        Ver mas..
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/diagnostico.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Diagnóstico Organizacional</h4>
+                        <p class="card-text">Evaluación y análisis de las empresas, con el objetivo de detectar posibles
+                            problemáticas o áreas de oportunidad.</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal4">
+                        Ver mas..
+                    </button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/personal.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Filtro de Contratación de Personal</h4>
+                        <p class="card-text">Intermediario en proceso de contratación de personal, con el objetivo de
+                            detectar si el
+                            candidato está alineado a la filosofía empresarial, a fin de disminuir la rotación de
+                            puestos.</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal5">
+                        Ver mas..
+                    </button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/coach1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Coaching</h4>
+                        <p class="card-text">Sesiones de coaching con el objetivo de crear conciencia e impulsar a la
+                            persona a su
+                            crecimiento y desarrollo personal, enfocado al logro de metas y objetivos.</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal6">
+                        Ver mas..
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/coach3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Talleres</h4>
+                        <p class="card-text">Capacitación personal y empresarial, en temas desde
+                            la motivación hasta la implementación de nuevas técnicas y herramientas en pro de su
+                            crecimiento.</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal7">
+                        Ver mas..
+                    </button>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- The Modal 1 -->
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title mx-auto fas fa-coffee"> CONSULTORIA EMPRESARIAL</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Hoy en día, la consultoría de empresas juega un papel fundamental para el crecimiento y óptimo
+                    desempeño de las organizaciones<br><br>
+                    - Diagnóstico y Evaluación Preliminar<br>
+                    - Planificación de Medidas<br>
+                    - Ejecución<br>
+                    - Terminación y Cierre<br>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Fin modal-->
+
+    <!-- The Modal 2 -->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title mx-auto fas fa-coffee"> SERVICIOS CONTABLES</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Llevar un control contable y fiscal de tu negocio, te garantiza más tranquilidad al momento de tomar
+                    tus decisiones.<br><br>
+                    - Asesoría personalizada<br>
+                    - Contabilidad en general<br>
+                    - Impuestos <br>
+                    - Facturación <br>
+                    - Tramites IMSS, SUA e IDSE<br>
+
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Fin modal-->
+
+    <!-- The Modal 3 -->
+    <div class="modal" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title mx-auto fas fa-coffee"> DESARROLLO PERSONAL</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    La autorrealización es una necesidad básica del ser humano que se muestra en la pirámide de Maslow.
+                    Por ello la importancia del constante crecimiento y desarrollo personal.<br><br>
+                    - Charlas personalizadas de desarrollo personal<br>
+                    - Charlas grupales de desarrollo personal<br>
+                    - Desarrollo de recursos personales<br>
+                    - Realización de Plan de Vida<br>
+
+
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Fin modal-->
+
+    <!-- The Modal 4 -->
+    <div class="modal" id="myModal4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title mx-auto fas fa-coffee"> DIAGNOSTICO ORGANIZACIONAL</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    El hombre prudente prefiere invertir en prevención antes que en corrección. Detectar a tiempo las
+                    posibles problemática nos lleva a la mejor toma de decisiones.<br><br>
+                    - Evaluación de tu negocio<br>
+                    - Detección de áreas de oportunidad<br>
+                    - Implementación de medidas preventivas<br>
+                    - Análisis de escenarios futuros<br>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Fin modal-->
+
+    <!-- The Modal 5 -->
+    <div class="modal" id="myModal5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title mx-auto fas fa-coffee"> FILTRO DE CONTRATACION DE PERSONAL</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Uno de los principales problemas para las empresas es la rotación de personal, lo cual les genera
+                    más costos y más tiempo invertido en la capacitación.<br><br>
+                    - Entrevista de candidatos<br>
+                    - Análisis de recursos personales de candidatos<br>
+                    - Alineación de candidatos a la filosofía de la empresa<br>
+
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Fin modal-->
+
+    <!-- The Modal 6 -->
+    <div class="modal" id="myModal6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title mx-auto fas fa-coffee"> COACHING</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Proceso de transformación personal que busca liberar el potencial de las personas. Desarrollar y
+                    explotar los recursos de las personas para el crecimiento organizacional y personal.<br><br>
+                    - Coaching Individual. Despierta el potencial que tienes dentro de ti<br>
+                    - Coaching Ejecutivo. Desarrollo de habilidades de liderazgo e influencia sobre tu equipo<br>
+
+
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Fin modal-->
+
+    <!-- The Modal 7 -->
+    <div class="modal" id="myModal7">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title mx-auto fas fa-coffee"> TALLERES</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    La capacitación constante del personal es una herramienta importante para un buen desempeño y clima
+                    organizacional.<br><br>
+                    - Talleres de liderazgo. Se un líder dentro de tu organización a fin de sumar y de integrar más a
+                    tu equipo de trabajo.<br>
+                    - Talleres de PNL (Programación Neurolingüística). Conoce la herramienta PNL para la optimización
+                    de tus actividades laborales y personales.<br>
+                    - Talleres de motivación. Encontrar la motivación necesaria para el logro de tus objetivos.<br>
+
+
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Fin modal-->
+
+
+    <!-- The Contact Section -->
+    <div class="w3-black" id="tour">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+            <h2 class="w3-wide w3-center">CONTACTO</h2>
+            <p class="w3-opacity w3-center"><i>Duda? Estamos a tus ordenes, escribenos!</i></p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m6 w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Tepic, Nayarit<br>
+                    <i class="fa fa-phone" style="width:30px"></i> Phone: +52 311 222 13 45<br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email: irconsultoria13@gmail.com<br>
+                </div>
+                <div class="w3-col m6">
+                    <form action="/action_page.php" target="_blank">
+                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                            </div>
+                        </div>
+                        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                        <button class="w3-button w3-red w3-section w3-right" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Content -->
+
+
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Efren
+                Lopez</a>
+        </p>
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

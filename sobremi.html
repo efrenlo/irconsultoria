@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Consultoria</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Estilos-->
+<link href="css/estilos.css" rel="stylesheet">
+
+<body background="imagenes/fondo.png">
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="sobremi.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">¿Quien soy?</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">Mas <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="Servicios.html" class="w3-bar-item w3-button">Servicios</a>
+                    <a href="experiencia.html" class="w3-bar-item w3-button">Experiencia</a>
+
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+                    class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+    </div>
+
+    <div class="container">
+
+        <hr>
+        <hr>
+        <div class="card" style="width: 23rem;">
+            <img src="imagenes/coach1.jpg" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><b>C.P. Israel Reyes Zavala</b></h5>
+                <p class="card-text"> Mi objetivo es impulsar a las personas y organizaciones hacia el crecimiento
+                    personal y empresarial.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">9 años de experiencia en el sector público y privado.</li>
+                <li class="list-group-item">- Certificado en Coaching con PNL.<br>
+                    - Certificado en Coach de Vida.<br>
+                    - Certificado en Liderazgo Disruptivo.<br>
+                </li>
+                <li class="list-group-item">Así como diversos cursos y talleres en temas contables y fiscales.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
